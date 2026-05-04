@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+header{
+  text-align:center;
+  padding:60px 20px 30px;
+  border-bottom:1px solid #222;
+}
+
+header h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+header p{
+  color:#888;
+}
+
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#121212;
+  border:1px solid #222;
+  border-radius:14px;
+  padding:25px;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:#444;
+}
+
+.card h2{
+  margin-bottom:12px;
+  font-size:1.4rem;
+}
+
+.card p{
+  color:#999;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+.button{
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+  background:#1f1f1f;
+  border:1px solid #333;
+  padding:12px 18px;
+  border-radius:8px;
+  transition:0.2s;
+}
+
+.button:hover{
+  background:#2a2a2a;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#666;
+  border-top:1px solid #222;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:2.2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Projects</h1>
+  <p>Click a project to open live website</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>UCSD Capital Analytics</h2>
+    <p>
+      Capital analytics platform for portfolio insights,
+      risk monitoring, and finance tools.
+    </p>
+
+    <a class="button"
+       href="https://ucsd-capital-analytics-main.vercel.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Open Website
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Cash Flow Predictor</h2>
+    <p>
+      Machine learning application for forecasting
+      project cash flow and capital planning.
+    </p>
+
+    <a class="button"
+       href="https://i4x-capital-project-cashflow-predictor.streamlit.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Open Website
+    </a>
+  </div>
+
+</main>
+
+<footer>
+Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
